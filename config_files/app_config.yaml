@@ -1,19 +1,19 @@
 defaults:
   - generators:
-#      - falcon-7b-instruct
-#      - flan-t5-xxl
-#      - mistral-7b
+      - falcon-7b-instruct
+      - flan-t5-xxl
+      - mistral-7b
       - gpt-2
-#      - gpt-3.5-turbo
-#      - gpt-3.5-turbo-16k
-#      - gpt-4
-#      - luminous-base
-#      - luminous-base-control
-#      - luminous-extended
-#      - luminous-extended-control
-#      - luminous-supreme
-#      - luminous-supreme-control
-#      - mpnet
-#      - sentence-transformers
+      - gpt-3.5-turbo
+      - gpt-3.5-turbo-16k
+      - gpt-4
+      - luminous-base
+      - luminous-base-control
+      - luminous-extended
+      - luminous-extended-control
+      - luminous-supreme
+      - luminous-supreme-control
+      - mpnet
+      - sentence-transformers
 
 port: 9985
