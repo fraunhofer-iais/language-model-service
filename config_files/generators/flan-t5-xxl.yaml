@@ -1,0 +1,11 @@
+flan-t5-xxl:
+  model: google/flan-t5-xxl
+  model_provider: HuggingFace
+  model_type: AutoModelForSeq2SeqLM
+  tokenizer: google/flan-t5-xxl
+  change_pad_token: True
+  use_fast: False
+  # adapter:
+  cache_dir: /mnt/mydrive/models
+  device: cuda:1
+  use_accelerate: False

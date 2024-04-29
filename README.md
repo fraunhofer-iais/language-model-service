@@ -1,1 +1,1 @@
-# language-model-service
+# Language Model Service

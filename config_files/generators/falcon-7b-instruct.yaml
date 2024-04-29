@@ -1,0 +1,11 @@
+falcon-7b-instruct:
+  model: tiiuae/falcon-7b-instruct
+  model_provider: HuggingFace
+  model_type: AutoModelForCausalLM
+  tokenizer: tiiuae/falcon-7b-instruct
+  change_pad_token: True
+  use_fast: False
+  # adapter:
+  cache_dir: /mnt/mydrive/models
+  device: cuda:0
+  use_accelerate: False

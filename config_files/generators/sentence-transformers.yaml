@@ -1,0 +1,6 @@
+sentence-transformers:
+  model: multi-qa-MiniLM-L6-cos-v1
+  model_provider: SentenceTransformers
+  # adapter:
+  cache_dir: /mnt/mydrive/models
+  device: "cuda:1"

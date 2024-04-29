@@ -1,0 +1,6 @@
+mpnet:
+  model: deepset/all-mpnet-base-v2-table
+  model_provider: SentenceTransformers
+  # adapter:
+  # cache_dir:
+  device: cpu

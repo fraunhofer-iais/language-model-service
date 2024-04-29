@@ -1,0 +1,11 @@
+mistral-7b:
+  model: mistralai/Mistral-7B-v0.1
+  model_provider: HuggingFace
+  model_type: AutoModelForCausalLM
+  tokenizer: mistralai/Mistral-7B-v0.1
+  change_pad_token: True
+  use_fast: False
+  # adapter:
+  cache_dir: /mnt/mydrive/models
+  device: cuda:0
+  use_accelerate: False
