@@ -29,6 +29,7 @@ class HuggingFaceGenerator(Generator):
     ):
         self.__model_name = model
         self.__tokenizer_name = tokenizer
+        self.__token = os.getenv("HF_TOKEN", "Please pass your HF token as environment variable 'HF_TOKEN' to access gated models!")
         self.__use_fast = use_fast
         self.__cache_dir = cache_dir
         self.__model_type = self.__load_model_type(model_type=model_type)
@@ -60,6 +61,7 @@ class HuggingFaceGenerator(Generator):
         model_args = {
             "pretrained_model_name_or_path": self.__model_name,
             # "torch_dtype": torch.float16,
+            "token": self.__token
         }
 
         if "falcon" in self.__model_name:
@@ -77,6 +79,7 @@ class HuggingFaceGenerator(Generator):
         tokenizer_args = {
             "pretrained_model_name_or_path": self.__tokenizer_name,
             "use_fast": self.__use_fast,
+            "token": self.__token
         }
 
         if self.__cache_dir:

@@ -13,3 +13,5 @@ sentence_transformers
 requests~=2.31.0
 aleph-alpha-client==7.0.0
 pytest~=7.4.4
+sentencepiece==0.2.0
+protobuf==5.27.2

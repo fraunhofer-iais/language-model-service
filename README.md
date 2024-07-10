@@ -3,24 +3,34 @@ This repo provides language models via a (REST) endpoint.
 
 ## Installation
 
-### Setup the Repository
+## Setup the Repository
 
 ```bash
-$ git clone git@github.com:fraunhofer-iais/language-model-service.git
-
-$ cd language-model-service
-
-$ git checkout master
+git clone git@github.com:fraunhofer-iais/language-model-service.git
+cd language-model-service
+git checkout master
 ```
 ## Running the Service
 ```bash
-$ virtualenv venv
-$ source venv/bin/activate
-$ pip install -r requirements.txt
-$ python -m src.start
+virtualenv venv
+source venv/bin/activate
+pip install -r requirements.txt
 ```
+
+## Set environment variables
+```bash
+export HF_TOKEN=xxx
+export OPENAI_API_KEY=xxx
+export ALEPH_ALPHA_TOKEN=xxx
+```
+
+Now you can start the service using the command 
+```bash
+python -m src.start
+```
+
 ## REST API description
-When running the service, there is a REST API description available at http://0.0.0.0:PORT/docs, where PORT is specified in the respective environment.
+When running the service, there is a REST API description available at http://0.0.0.0:<PORT>/docs, where <PORT> is specified in the config file.
 
 ## Using REST end-point
 
